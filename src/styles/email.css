@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+ /* title section  */
+h1
+{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.invalid-feedback
+{
+    display: block;
+    font-size: 0.775em;
+}
+
+
+.contact-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(22,33,49);
+}
+
+.title-body h1
+{
+    color: rgb(238,109,48);
+}
+
+/* form section */
+
+.row
+{
+    margin: 5rem auto;
+}
+
+.contact-img img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-link
+{
+    border: 2px solid #FF640A;
+    border-radius: 5px;
+    background: none;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: #FF640A;
+    /* transition-delay: .3s; */
+    transition-duration: .5s;
+    margin-top: 1rem;
+}
+
+.btn-link:hover
+{
+    color: #FFF;
+    background-color: #FF640A;
+}
+
+label
+{
+    display: none;
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+{
+    /* Styles pour cette Media Queries */
+    section.contact.container > div > div.contact-img.col
+    {
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1199px) 
+{
+    /* Styles pour cette Media Queries */
+    section.contact.container > div > div.contact-img.col
+    {
+        display: none;
+    }
+}
+
+
