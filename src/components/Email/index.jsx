@@ -1,5 +1,6 @@
 // import { EmailJSResponseStatus } from "emailjs-com"
 import emailjs from 'emailjs-com'
+import '../../styles/Email.css'
 
 function Email() {
 
@@ -17,18 +18,22 @@ function Email() {
 
             <div className="row">
 
-                <div className="contact-img col">
+                <div className="contact-info col">
                     <div>
-                        <h1>N'hésitez pas à nous laissez un message</h1>
+                        <h2>Nos coordonées</h2>
                     </div>
 
                     <div>
-                        <h2>Par Téléphone</h2>
+                        <h3>Nous sommes joignables toute la semaine et le dimanche 24h/24</h3>
+                    </div>
+
+                    <div className='tel-container'>
+                        <h4>Par Téléphone</h4>
                         <a href="tel:+33 6 59 52 03 23">+33 6 59 52 03 23</a>
                     </div>
-
-                    <div>
-                        <h2>Par Email</h2>
+                    
+                    <div className='email-container'>
+                        <h4>Par Email</h4>
                         <a href="mailto:dynamic-assainissement@gmail.com">dynamic-assainissement@gmail.com</a>
                     </div>
                     
