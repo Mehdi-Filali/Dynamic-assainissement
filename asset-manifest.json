@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/Dynamic-assainissement/static/js/main.c0f7906f.js",
+    "main.css": "/Dynamic-assainissement/static/css/main.e8b70fbd.css",
+    "main.js": "/Dynamic-assainissement/static/js/main.7f12be93.js",
     "index.html": "/Dynamic-assainissement/index.html",
-    "main.c0f7906f.js.map": "/Dynamic-assainissement/static/js/main.c0f7906f.js.map"
+    "main.e8b70fbd.css.map": "/Dynamic-assainissement/static/css/main.e8b70fbd.css.map",
+    "main.7f12be93.js.map": "/Dynamic-assainissement/static/js/main.7f12be93.js.map"
   },
   "entrypoints": [
-    "static/js/main.c0f7906f.js"
+    "static/css/main.e8b70fbd.css",
+    "static/js/main.7f12be93.js"
   ]
 }
