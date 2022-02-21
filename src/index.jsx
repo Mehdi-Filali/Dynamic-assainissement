@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
+import About from './pages/About'
 
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
     </Routes>
 
     <Footer />

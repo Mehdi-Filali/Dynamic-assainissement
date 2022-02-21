@@ -9,13 +9,6 @@ h2, p, h3, h4, a
     font-family: 'Comfortaa', sans-serif;
 }
 
-h1
-{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    font-family: 'Lobster', cursive;
-}
-
 h2, h3, .tel-container
 {
     padding-bottom: 2rem;
@@ -33,8 +26,10 @@ h2, h3, .tel-container
 .contact
 {
     border: 1px solid lightgrey;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 0 3rem;
+    margin-top: -3rem;
+    background: rgba(255,255,255,1);
 }
 
 .row

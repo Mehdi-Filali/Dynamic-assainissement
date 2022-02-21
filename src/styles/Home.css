@@ -1,0 +1,132 @@
+p
+{
+    text-align: justify;
+}
+
+.home p
+{
+    width: 60%;
+}
+
+.main
+{
+    margin: 0 auto;
+    width: 73%;
+}
+
+.container-left, .container-right, .container-icon
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-row
+{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.container-row-img
+{
+    width: 45%;
+    text-align: center;
+}
+
+.container-row-info
+{
+    width: 45%;
+}
+
+.why-contact
+{
+    width: 100%;
+    
+}
+
+.why-contact div, .icon-dcp
+{
+    width: 30%;
+}
+
+.why-contact-title, .why-contact, .service-title
+{
+    text-align: center;
+}
+
+.icon
+{
+    height: 3em;
+}
+
+.container-service
+{
+    width: 100%;
+}
+
+.icon-dcp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 25em;
+}
+
+.icon-dcp p
+{
+    padding: 0;
+}
+
+.pomper, .curer, .déboucher
+{
+    width: 20em;
+    height: 20em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-radius: 50%;
+}
+
+.pomper
+{
+    background: url(../assets/contenu/pompage.jpg);
+    background-size: cover;
+}
+
+.curer
+{
+    background: url(../assets/contenu/slide\ 1-1.jpg);
+    background-size: cover;
+}
+
+.déboucher
+{
+    background: url(../assets/contenu/debouche.jpg);
+    background-size: cover;
+}
+
+
+.map
+{
+    width: 100%;
+    align-items: center;
+}
+
+.map div
+{
+    width: 45%;
+}
+
+.map div + div
+{
+    text-align: center;
+}
+
+.map img
+{
+    width: 90%;
+}
+
+

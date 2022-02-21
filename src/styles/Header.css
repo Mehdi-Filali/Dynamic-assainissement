@@ -1,0 +1,32 @@
+nav
+{
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-logo
+{
+    width: auto;
+}
+
+img
+{
+    width: 47%;
+}
+
+.nav-link
+{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding: 0;
+}
+
+link
+{
+    color: black;
+}

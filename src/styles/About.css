@@ -1,0 +1,22 @@
+.info
+{
+    width: 73%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 3rem;
+    line-height: 3rem;
+}
+
+.about
+{
+    position: relative;
+}
+.style-border
+{
+    width: calc(201% + 1.3px);
+    height: 60px;
+    width: calc(100% + 1.3px);
+    bottom: 0px;
+    position: absolute;
+    transform: rotate(180deg);
+}
