@@ -2,7 +2,9 @@ import '../../styles/Home.css'
 import { FaRegHandshake } from 'react-icons/fa'
 import { AiOutlineFileProtect } from 'react-icons/ai'
 import { VscWorkspaceTrusted } from 'react-icons/vsc'
-
+import Aos from "aos"
+import "aos/dist/aos.css"
+import React , { useEffect } from "react"
 
 
 function Home() {
@@ -12,6 +14,10 @@ function Home() {
     fontSize: "2em",
     marginBottom: "1em"
   }
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, [])
 
   return (
 
@@ -32,10 +38,10 @@ function Home() {
             </div>
 
             <div className='container-row'>
-              <div className='container-row-img'>
+              <div data-aos="fade-right" className='container-row-img'>
                 <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
               </div>
-              <div className='container-row-info'>
+              <div data-aos="fade-left" className='container-row-info'>
                 <p>
                   Le débouchage ou hydrocurage, consiste à vider les conduits obstrués empêchant la voie d’écoulement à l’aide d’un nettoyeur, par le biais d’un outil mécanique ou de façon manuelle.
                   Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.
@@ -52,7 +58,7 @@ function Home() {
             </div>
 
             <div className='container-row why-contact'>
-              <div>
+              <div data-aos="fade-in">
                 <AiOutlineFileProtect style={styleIcon} />
                 <h2>Professionnalisme</h2>
                 <p>
@@ -61,7 +67,7 @@ function Home() {
                 </p>
               </div>
 
-              <div>
+              <div data-aos="fade-in">
                 <VscWorkspaceTrusted style={styleIcon} />
                 <h2>La transparence</h2>
                   <p>
@@ -69,7 +75,7 @@ function Home() {
                   </p>
               </div>
 
-              <div>
+              <div data-aos="fade-in">
                 <FaRegHandshake style={styleIcon} />               
                 <h2>Satisfaction 100%</h2>
                   <p>
@@ -87,14 +93,14 @@ function Home() {
             </div>
 
             <div className='container-row'>
-              <div className='container-row-info'>
+              <div data-aos="fade-right" className='container-row-info'>
                 <p>
                   Le débouchage ou hydrocurage, consiste à vider les conduits obstrués empêchant la voie d’écoulement à l’aide d’un nettoyeur, par le biais d’un outil mécanique ou de façon manuelle.
                   Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.
                   C’est pourquoi, notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
                 </p>
               </div>
-              <div className='container-row-img'>
+              <div data-aos="fade-left" className='container-row-img'>
                 <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
               </div>
             </div>
@@ -111,17 +117,17 @@ function Home() {
 
               <div className='container-service container-row'>
               
-                <div className='icon-dcp'>
+                <div data-aos="fade-in" className='icon-dcp'>
                   <div className='déboucher'></div>
                   <h2>Le débouchage</h2>
                 </div>
 
-                <div className='icon-dcp'>
+                <div data-aos="fade-in" className='icon-dcp'>
                   <div className='curer'></div>
                   <h2>Le curage</h2>
                 </div>
 
-                <div className='icon-dcp'>
+                <div data-aos="fade-in" className='icon-dcp'>
                   <div className='pomper'></div>
                   <h2>Le pompage</h2>
                 </div>
@@ -138,10 +144,10 @@ function Home() {
 
             <div className='container-row'>
 
-              <div className='container-row-img'>
+              <div data-aos="fade-right" className='container-row-img'>
                 <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
               </div>
-              <div className='container-row-info'>
+              <div data-aos="fade-left" className='container-row-info'>
                 <p>
                   Chez Dynamic'Assainissement, nous disposons des connaissances techniques pour vous guider vers des solutions optimales. Nous prenons soin de vous fournir des conseils professionnels afin de garantir le résultat souhaité.
                   Profitez de l'expertise de notre entreprise et faites nettoyer votre système d'assainissement par les meilleurs agents professionnels.

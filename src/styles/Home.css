@@ -31,17 +31,17 @@ p
 {
     width: 45%;
     text-align: center;
-    animation-name: slide-left;
+    /* animation-name: slide-left;
     transition-delay:.3s;
-    animation-duration: 1.5s;
+    animation-duration: 1.5s; */
 }
 
 .container-row-info
 {
     width: 45%;
-    animation-name: slide-right;
+    /* animation-name: slide-right;
     transition-delay:.3s;
-    animation-duration: 1.5s;
+    animation-duration: 1.5s; */
 }
 
 .why-contact
@@ -79,6 +79,11 @@ p
     height: 25em;
 }
 
+.icon-dcp h2
+{
+    padding-bottom: 1.5em;
+}
+
 .icon-dcp p
 {
     padding: 0;
@@ -86,8 +91,8 @@ p
 
 .pomper, .curer, .déboucher
 {
-    width: 20em;
-    height: 20em;
+    width: 18em;
+    height: 18em;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -136,7 +141,7 @@ p
 }
 
 
-@keyframes slide-left {
+/* @keyframes slide-left {
     from {transform: translate(-100px); opacity: 0;}
     to {transform: translate(0px); opacity: 1;}
     
@@ -146,4 +151,4 @@ p
     from {transform: translate(+100px); opacity: 0;}
     to {transform: translate(0px); opacity: 1;}
     
-}
+} */

@@ -2,13 +2,60 @@
 
 footer
 {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.footer-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.footer-link
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.footer-link a
+{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link a:hover
+{
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.footer-logo
+{
+    width: 40%;
+    padding: inherit;
+    background: url(../assets/logo/logo_da.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-copyright
+{
     width: 100%;
-    height: 5vh;
+    padding: 1em 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(0, 0, 0);
     color: white;
     font-family: 'Comfortaa', sans-serif;
-    margin-top: 3rem;
 }
