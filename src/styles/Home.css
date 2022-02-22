@@ -31,11 +31,17 @@ p
 {
     width: 45%;
     text-align: center;
+    animation-name: slide-left;
+    transition-delay:.3s;
+    animation-duration: 1.5s;
 }
 
 .container-row-info
 {
     width: 45%;
+    animation-name: slide-right;
+    transition-delay:.3s;
+    animation-duration: 1.5s;
 }
 
 .why-contact
@@ -130,3 +136,14 @@ p
 }
 
 
+@keyframes slide-left {
+    from {transform: translate(-100px); opacity: 0;}
+    to {transform: translate(0px); opacity: 1;}
+    
+}
+
+@keyframes slide-right {
+    from {transform: translate(+100px); opacity: 0;}
+    to {transform: translate(0px); opacity: 1;}
+    
+}
