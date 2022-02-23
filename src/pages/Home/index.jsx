@@ -21,7 +21,7 @@ function Home() {
 
   return (
 
-    <div>
+    <div className='container-main'>
       <div className="container-title home"> 
 
         <h1>Nettoyer, Vidanger, Déboucher, Débloquer. On s'occupe de tout !</h1>
