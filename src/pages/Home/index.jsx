@@ -28,7 +28,7 @@ function Home() {
         <p>“Personne n'aime penser à l'entretien quotidien de ses tuyaux et canalisations, mais lorsqu'ils se bouchent, c'est un problème sérieux. Nous sommes l'entreprise sur laquelle vous pouvez compter pour être là pour vous 24h/24, 7j/7. Nous nous rendons à votre domicile ou à votre bureau et nettoyons vos canalisations et vos tuyaux.”</p>
 
 
-        </div>
+      </div>
 
         <div className='main'>
 
@@ -57,7 +57,7 @@ function Home() {
               <h1>Pourquoi nous contacter ?</h1>
             </div>
 
-            <div className='container-row why-contact'>
+            <div className='container-row why-contact responsive-col'>
               <div data-aos="fade-in">
                 <AiOutlineFileProtect style={styleIcon} />
                 <h2>Professionnalisme</h2>
@@ -115,7 +115,7 @@ function Home() {
 
             <div className='container-row'>
 
-              <div className='container-service container-row'>
+              <div className='responsive-col container-service container-row'>
               
                 <div data-aos="fade-in" className='icon-dcp'>
                   <div className='déboucher'></div>
