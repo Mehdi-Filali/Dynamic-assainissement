@@ -13,9 +13,7 @@ h1
     align-items: center;
     height: 60vh;
     color: #fff;
-    background-repeat: no-repeat;
     background-position: center;
-    /* background: #C04848; */
     background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url('/src/assets/contenu/banner.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
