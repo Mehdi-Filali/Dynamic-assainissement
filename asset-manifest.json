@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/Dynamic-assainissement/static/css/main.c3fa4c57.css",
-    "main.js": "/Dynamic-assainissement/static/js/main.82086d9c.js",
+    "main.css": "/Dynamic-assainissement/static/css/main.3cd4aea6.css",
+    "main.js": "/Dynamic-assainissement/static/js/main.5ceb7b7b.js",
     "static/media/banner.jpg": "/Dynamic-assainissement/static/media/banner.14c9ee7febe5535296c8.jpg",
-    "static/media/slide 1-1.jpg": "/Dynamic-assainissement/static/media/slide 1-1.6994cc5f4c130d79be53.jpg",
-    "static/media/map.jpg": "/Dynamic-assainissement/static/media/map.f77fb98054d472d54501.jpg",
+    "static/media/pompage.png": "/Dynamic-assainissement/static/media/pompage.1de59f25766ed37b1293.png",
+    "static/media/curage.png": "/Dynamic-assainissement/static/media/curage.a1672facbdeace12c2d9.png",
+    "static/media/map_kai.jpg": "/Dynamic-assainissement/static/media/map_kai.4774e8b64ff2b2a1e1e1.jpg",
+    "static/media/syndic_proprio.jpg": "/Dynamic-assainissement/static/media/syndic_proprio.5493aefc73977801c26b.jpg",
+    "static/media/degorgement.jpg": "/Dynamic-assainissement/static/media/degorgement.50c791adcb5d3ef0c2d5.jpg",
     "static/media/debouche.jpg": "/Dynamic-assainissement/static/media/debouche.4c840ade35d78fe243fb.jpg",
-    "static/media/pompage.jpg": "/Dynamic-assainissement/static/media/pompage.a500e7b0e563257740a7.jpg",
     "static/media/logo_da.png": "/Dynamic-assainissement/static/media/logo_da.5ce766e4a7b1ec3b21d6.png",
     "index.html": "/Dynamic-assainissement/index.html",
-    "main.c3fa4c57.css.map": "/Dynamic-assainissement/static/css/main.c3fa4c57.css.map",
-    "main.82086d9c.js.map": "/Dynamic-assainissement/static/js/main.82086d9c.js.map"
+    "main.3cd4aea6.css.map": "/Dynamic-assainissement/static/css/main.3cd4aea6.css.map",
+    "main.5ceb7b7b.js.map": "/Dynamic-assainissement/static/js/main.5ceb7b7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3fa4c57.css",
-    "static/js/main.82086d9c.js"
+    "static/css/main.3cd4aea6.css",
+    "static/js/main.5ceb7b7b.js"
   ]
 }
