@@ -22,9 +22,9 @@ function Header() {
 
         <div className='nav-links'>
 
-          <NavLink exact to="/" activeClassName="style-nav-active">Accueil</NavLink>
-          <NavLink to="/About" activeClassName="style-nav-active">Notre Entreprise</NavLink>
-          <NavLink to="/Contact"  activeClassName="style-nav-active">Contact</NavLink>
+          <NavLink exact to="/" activeClassName="style-nav-active" onClick={handleShowLinks}>Accueil</NavLink>
+          <NavLink to="/About" activeClassName="style-nav-active" onClick={handleShowLinks}>Notre Entreprise</NavLink>
+          <NavLink to="/Contact"  activeClassName="style-nav-active" onClick={handleShowLinks}>Contact</NavLink>
 
         </div>
 
