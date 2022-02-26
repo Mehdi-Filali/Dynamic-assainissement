@@ -5,6 +5,7 @@ import { VscWorkspaceTrusted } from 'react-icons/vsc'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import React , { useEffect } from "react"
+import GoogleMap from '../../components/GoogleMap'
 
 
 function Home() {
@@ -41,22 +42,21 @@ function Home() {
           <div className='section-cel flex-col'>
 
             <div>
-              <h2>Nos services de dégorgements</h2>
+              <h2>Intervention en Urgence</h2>
             </div>
 
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
               <div data-aos="fade-right" className='width-element-2 txt-center'>
-                <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
+                <img src={require('../../assets/contenu/degorgement.jpg')} alt='degorgement'/>
               </div>
 
               <div data-aos="fade-left" className='width-element-2'>
                 
                 <p>
-                  Le débouchage ou hydrocurage, consiste à vider les conduits obstrués empêchant la voie d’écoulement à l’aide d’un nettoyeur, par le biais d’un outil mécanique ou de façon manuelle.
-                  Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.
-                  C’est pourquoi, notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
-                  Nous veillons à ce que vos demandes soient exécutées correctement, efficacement et en toute sécurité. Nos agents s'efforcent de vous fournir les conseils nécessaires et d'assurer un suivi continu.
+                Le débouchage ou hydrocurage, consiste à vider, déboucher et désengorger les conduits obstrués empêchant la voie d’écoulement à l’aide d’un jet haute pression contrôlé.</p>
+                <p>Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.</p>
+                <p>C'est là ou nous intervenons ! Notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
                 </p>
 
               </div>
@@ -120,14 +120,14 @@ function Home() {
 
               <div data-aos="fade-right" className='width-element-2'>
                 <p>
-                  Le débouchage ou hydrocurage, consiste à vider les conduits obstrués empêchant la voie d’écoulement à l’aide d’un nettoyeur, par le biais d’un outil mécanique ou de façon manuelle.
-                  Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.
-                  C’est pourquoi, notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
+                  Le débouchage ou hydrocurage, consiste à vider, déboucher et désengorger les conduits obstrués empêchant la voie d’écoulement à l’aide d’un jet haute pression contrôlé.</p>
+                  <p>Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.</p>
+                  <p>C'est là ou nous intervenons ! Notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
                 </p>
               </div>
 
               <div data-aos="fade-left" className='width-element-2 txt-center'>
-                <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
+                <img src={require('../../assets/contenu/degorgement.jpg')} alt='logo'/>
               </div>
 
             </div>
@@ -149,17 +149,17 @@ function Home() {
                 
               <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c flex-space-b'>
                 <div className='déboucher'></div>
-                <h2>Le débouchage</h2>
+                <h3>Le débouchage</h3>
               </div>
 
               <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c flex-space-b'>
                 <div className='curer'></div>
-                <h2>Le curage</h2>
+                <h3>Le curage</h3>
               </div>
 
               <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c flex-space-b'>
                 <div className='pomper'></div>
-                <h2>Le pompage</h2>
+                <h3>Le pompage</h3>
               </div>
 
             </div>
@@ -179,7 +179,7 @@ function Home() {
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
               <div data-aos="fade-right" className='width-element-2 txt-center'>
-                <img src={require('../../assets/logo/logo_da.png')} alt='logo'/>
+                <img src={require('../../assets/contenu/syndic_proprio.jpg')} alt='Syndicat de Propriété'/>
               </div>
 
               <div data-aos="fade-left" className='width-element-2'>
@@ -206,13 +206,71 @@ function Home() {
               </div>
 
               <div data-aos="fade-in-out" className='width-element-2 txt-center'>
-                <img src={require('../../assets/contenu/map.jpg')}  alt='map'/>
+                <img src={require('../../assets/contenu/map_kai.jpg')}  alt='map' className='map'/>
               </div>
 
             </div>
 
           </div>
 
+        </section>
+
+        <section className='seventh-module flex-display-row flex-justify-c'>
+        
+          <div className='section-cel flex-col'>
+
+            <div>
+              <h2>Nos Tarifs</h2>
+            </div>
+
+            <div className='flex-display-row flex-space-b responsive-col'>
+
+              <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c'>
+
+                <h2 className='txt-center'>Intervention Standard :</h2>
+                <h3>109€ TTC</h3>
+                <p>
+                  Débouchage manuel de vos équipements ménagers.
+                Intervention en urgence à votre domicile.                
+                </p>
+
+              </div>
+
+              <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c'>
+
+                <h2 className='txt-center'>Intervention Hydrocurage :</h2>
+                <h3>229€ TTC</h3>
+                <p>
+                  Dégorgement de vos conduits avec notre matériel d'hydrocurage à haute pression.
+                  Intervention en urgence à votre domicile et partie extérieure.                
+                </p>
+                <p>
+                  Option curage canalisation : 49€ TTC / métre linéaire.
+                  Frais technique inclus dans le prix.
+                </p>
+
+              </div>
+
+              <div data-aos="fade-in" className='flex-col width-element-3 flex-align-c'>
+
+                <h2 className='txt-center'>Intervention Pompage et vidange :</h2>
+                <h3>329€ TTC</h3>
+                <p>
+                  Pompage de fosses septique et vidange de vos bacs à graisse. Intervention en urgence à votre domicile, société, restaurant et partie extérieure.                
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <section className='eighth-module flex-display-row flex-justify-c'>
+          <div className='google-map section-cel flex-col'>
+            <GoogleMap />
+          </div>
         </section>
 
       </div>

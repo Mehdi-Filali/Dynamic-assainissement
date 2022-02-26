@@ -1,8 +1,4 @@
-/* .container-main
-{
-    padding-top: 117px;
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*************** GENERIC FLEX STTYLES *********************/
 
@@ -52,6 +48,11 @@ p
     text-align: justify;
 }
 
+h2
+{
+    font-weight: bolder;
+}
+
 .container-main,
 .home,
 .container-section,
@@ -65,12 +66,25 @@ section
     padding-top: 117px;
 }
 
+.first-module img, 
+.third-module img, 
+.fifth-module img
+{
+    width: 53%;
+    border-radius: 3%;
+    box-shadow: 0px 1px 4px -1px rgb(0 0 0 / 57%);
+}
+
 section
 {
-    padding: 2em 0;
+    padding: 4em 0;
     overflow-x: hidden;
 }
 
+.home
+{
+    margin-bottom: 2em;
+}
 
 .container-title-cel, .section-cel
 {
@@ -97,7 +111,7 @@ section
     width: calc(100%/3.5);
 }
 
-.fourth-module h2
+.fourth-module h3
 {
     margin: 0;
     padding-top: .5em;
@@ -115,13 +129,13 @@ section
 
 .pomper
 {
-    background: url(../assets/contenu/pompage.jpg);
+    background: url(../assets/contenu/pompage.png);
     background-size: cover;
 }
 
 .curer
 {
-    background: url(../assets/contenu/slide\ 1-1.jpg);
+    background: url(../assets/contenu/curage.png);
     background-size: cover;
 }
 
@@ -137,24 +151,53 @@ section
     width: 77%;
 }
 
+.fourth-module
+{
+    background: #f5f5f5;
+    box-shadow: 0px 1px 4px -1px rgb(0 0 0 / 57%);
+}
 
 
+
+
+
+
+.seventh-module h3
+{
+    color: #e79d3c;
+}
+
+
+#root > div > div.container-section.flex-col.flex-align-c > section.seventh-module.flex-display-row.flex-justify-c > div > div.flex-display-row.flex-space-b.responsive-col > div:nth-child(1) > h2
+{
+    width: 95%;
+}
+
+.google-map
+{
+    border-radius: 12px;
+    overflow: hidden;
+}
 
 
 
 @media screen and (max-width: 844px) {
 
-    /* .home
+    /* p
     {
-        margin-top: 80px;
-        height: 30vh!important;
+        text-align: center;
+    } */
+
+    .home h1 
+    {
+        padding-top: 0rem;
+        padding-bottom: 3rem;
     }
 
-    .home h1, .home p
+    .container-main
     {
-        GOOD MODULE : 2
-        PROBLÈMES MODULE , 
-    } */
+        padding-top: 77px;
+    }
 
     .container-title-cel, .section-cel
     {
@@ -167,20 +210,20 @@ section
         width: 100%;
     }
 
-    .flex-display-row
+    .container-main .flex-display-row
     {
         flex-direction: column;
         align-items: center;
     }
     
-    .flex-display-row .flex-justify-c
+    .container-main .flex-display-row .flex-justify-c
     {
         align-items: center;
     }
 
     .width-element-2, .width-element-3
     {
-        width: 70%;
+        width: 80%;
     }
 
     .pomper, .curer, .déboucher
@@ -193,7 +236,6 @@ section
     {
         width: auto;
     }
-
 
 
 }
