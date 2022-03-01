@@ -1,0 +1,89 @@
+
+  
+.wrapper
+{
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+  
+.link_wrapper
+{
+    display: flex;
+    background: #333;
+    align-items: center;
+    padding: .5em;
+    position: relative;
+    transition: all .35s;
+
+}
+  
+.link_wrapper a
+{
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .35s;
+}
+  
+.icon
+{
+    width: 40px;
+   height: 40px;
+   transition: all .35s;
+   position: absolute;
+   /* display: flex; */
+   /* align-items: center; */
+   /* justify-content: flex-end; */
+   right: 0;
+   top: 26%;
+   /* vertical-align: middle; */
+   /* text-align: center; */
+}
+
+
+
+.icon svg
+{
+    color: orange;
+    width: 70%;
+    height: fit-content;
+}
+  
+.icon svg path
+{
+    width: 93px;
+    transition: all .35s;
+    color: transparent;
+}
+  
+.link_wrapper:hover
+{
+    background: rgb(42, 42, 42); 
+    color: #2ecc71;
+}
+  
+.link_wrapper a:hover + .icon
+{
+    /* border: 3px solid #2ecc71; */
+    /* transform: translate(+100px); */
+    right: -60px;
+    
+}
+
+.link_wrapper a:hover + .icon svg path
+{
+    color: orange;
+}
+
+.link_wrapper a:hover + .icon svg 
+{
+    /* transform: rotate(-45deg); */
+}

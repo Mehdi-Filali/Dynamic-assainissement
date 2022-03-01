@@ -10,6 +10,7 @@ footer
 .footer-link-container {  
     padding: 3em 0;
     width: 60%;
+    height: 14vw;
     justify-content: space-around;
 }
 
@@ -24,11 +25,12 @@ footer .width-element-2
     color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    width: fit-content;
 }
 
 .footer-link a:hover
 {
-    color: lightgrey;
+    color: rgb(153, 153, 153);
     text-decoration: none;
 }
 
@@ -47,12 +49,25 @@ footer .width-element-2
     .footer-link-container
     {
         width: 90%;
+        height: auto;
         justify-content: space-between;
+        padding: 1em 0;    
+    }
+
+    .footer-link
+    {
+        font-size: small;
+       line-height: 2em;
     }
 
     .footer-copyright
     {
         font-size: small;
-    } 
+    }
+
+    .responsive-btn
+    {
+        display: none;
+    }
 
 }

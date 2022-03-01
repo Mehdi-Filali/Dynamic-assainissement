@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import '../../styles/Footer.css'
+import BtnCall from '../BtnCall'
 
 function Footer() {
   return (
@@ -7,14 +8,20 @@ function Footer() {
 
       <div className='footer-link-container flex-display-row flex-align-c'>
 
-        <div className='footer-logo width-element-2 txt-center'>
+        <div className='footer-logo width-element-3 txt-center'>
           <img src={require('../../assets/logo/logo_da.png')} alt='logo' />
         </div>
 
-        <div className='footer-link flex-col width-element-2'>
+        <div className='footer-link flex-col width-element-3'>
           <NavLink exact to="/" activeClassName="style-nav-active">Accueil</NavLink>
           <NavLink to="/About" activeClassName="style-nav-active">Notre Entreprise</NavLink>
-          <NavLink to="/Contact" activeClassName="style-nav-active">Contact</NavLink>
+          <NavLink to="/Contact" activeClassName="style-nav-active">Contactez-nous</NavLink>
+          <NavLink to="/Contact" activeClassName="style-nav-active">Mentions Légales</NavLink>
+          <NavLink to="/Contact" activeClassName="style-nav-active">Politique de confidentialité</NavLink>
+        </div>
+
+        <div className='responsive-btn'>
+          <BtnCall />
         </div>
 
       </div>

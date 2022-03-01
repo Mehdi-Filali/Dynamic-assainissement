@@ -5,7 +5,7 @@ import { VscWorkspaceTrusted } from 'react-icons/vsc'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import React , { useEffect } from "react"
-import GoogleMap from '../../components/GoogleMap'
+import MapGoogle from '../../components/MapGoogle'
 
 
 function Home() {
@@ -47,7 +47,7 @@ function Home() {
 
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
-              <div data-aos="fade-right" className='width-element-2 txt-center'>
+              <div data-aos="fade-right" className='width-element-2 txt-center push-down'>
                 <img src={require('../../assets/contenu/degorgement.jpg')} alt='degorgement'/>
               </div>
 
@@ -118,7 +118,7 @@ function Home() {
 
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
-              <div data-aos="fade-right" className='width-element-2'>
+              <div data-aos="fade-right" className='width-element-2 push-down'>
                 <p>
                   Le débouchage ou hydrocurage, consiste à vider, déboucher et désengorger les conduits obstrués empêchant la voie d’écoulement à l’aide d’un jet haute pression contrôlé.</p>
                   <p>Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.</p>
@@ -178,7 +178,7 @@ function Home() {
 
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
-              <div data-aos="fade-right" className='width-element-2 txt-center'>
+              <div data-aos="fade-right" className='width-element-2 txt-center push-down'>
                 <img src={require('../../assets/contenu/syndic_proprio.jpg')} alt='Syndicat de Propriété'/>
               </div>
 
@@ -268,9 +268,15 @@ function Home() {
         </section>
 
         <section className='eighth-module flex-display-row flex-justify-c'>
-          <div className='google-map section-cel flex-col'>
-            <GoogleMap />
+
+          <div className='flex-display-row flex-justify-c responsive-col'>
+
+            <div data-aos="fade-up" className='google-map-wrapper section-cel flex-col'>
+              <MapGoogle />
+            </div>
+
           </div>
+
         </section>
 
       </div>
