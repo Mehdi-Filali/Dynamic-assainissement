@@ -9,7 +9,7 @@ function Footer() {
       <div className='footer-link-container flex-display-row flex-align-c'>
 
         <div className='footer-logo width-element-3 txt-center'>
-          <img src={require('../../assets/logo/logo_da.png')} alt='logo' />
+          <img src={require('../../assets/logo/logo-good.png')} alt='logo' />
         </div>
 
         <div className='footer-link flex-col width-element-3'>

@@ -15,6 +15,7 @@ ReactDOM.render(
 
     <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Dynamic-assainissement" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
     </Routes>

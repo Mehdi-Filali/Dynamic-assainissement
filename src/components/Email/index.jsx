@@ -34,7 +34,7 @@ function Email() {
                     
                     <div className='email-container'>
                         <h4>Par Email</h4>
-                        <a href="mailto:dynamic-assainissement@gmail.com">dynamic-assainissement@gmail.com</a>
+                        <a href="mailto:contact@dynamic-assainissement.fr">contact@dynamic-assainissement.fr</a>
                     </div>
                     
                 </div>
