@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dynamic-assainissement/static/css/main.63f6e69c.css",
-    "main.js": "/Dynamic-assainissement/static/js/main.88dc4d81.js",
+    "main.js": "/Dynamic-assainissement/static/js/main.729d41aa.js",
     "static/media/banner.jpg": "/Dynamic-assainissement/static/media/banner.14c9ee7febe5535296c8.jpg",
     "static/media/pompage.png": "/Dynamic-assainissement/static/media/pompage.1de59f25766ed37b1293.png",
     "static/media/curage.png": "/Dynamic-assainissement/static/media/curage.a1672facbdeace12c2d9.png",
@@ -12,12 +12,13 @@
     "static/media/degorgement.jpg": "/Dynamic-assainissement/static/media/degorgement.50c791adcb5d3ef0c2d5.jpg",
     "static/media/debouche.jpg": "/Dynamic-assainissement/static/media/debouche.4c840ade35d78fe243fb.jpg",
     "static/media/logo_da.png": "/Dynamic-assainissement/static/media/logo_da.5ce766e4a7b1ec3b21d6.png",
+    "static/media/logo-good.png": "/Dynamic-assainissement/static/media/logo-good.2f8393531e9b2e22b1e0.png",
     "index.html": "/Dynamic-assainissement/index.html",
     "main.63f6e69c.css.map": "/Dynamic-assainissement/static/css/main.63f6e69c.css.map",
-    "main.88dc4d81.js.map": "/Dynamic-assainissement/static/js/main.88dc4d81.js.map"
+    "main.729d41aa.js.map": "/Dynamic-assainissement/static/js/main.729d41aa.js.map"
   },
   "entrypoints": [
     "static/css/main.63f6e69c.css",
-    "static/js/main.88dc4d81.js"
+    "static/js/main.729d41aa.js"
   ]
 }
