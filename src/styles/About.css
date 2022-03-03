@@ -10,6 +10,10 @@
 .about
 {
     position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url(../assets/contenu/banniere-assainissement.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .style-border
 {
@@ -19,4 +23,23 @@
     bottom: 0px;
     position: absolute;
     transform: rotate(180deg);
+}
+
+@media screen and (max-width: 844px) 
+{
+    .about p
+    {
+        width: 90%;
+        letter-spacing: 1px;
+    }
+
+    .info
+    {
+        width: 90%;
+    }
+
+    .info p
+    {
+        letter-spacing: -1px;
+    }
 }

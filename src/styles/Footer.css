@@ -49,15 +49,19 @@ footer .width-element-2
     .footer-link-container
     {
         width: 90%;
-        height: auto;
+        height: 62vw;
         justify-content: space-between;
-        padding: 1em 0;    
+        padding: 1em 0;
+        flex-direction: column;
     }
 
     .footer-link
     {
         font-size: small;
-       line-height: 2em;
+        line-height: 2em;
+        width: auto;
+        align-items: center;
+
     }
 
     .footer-copyright

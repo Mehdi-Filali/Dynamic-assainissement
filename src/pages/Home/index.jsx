@@ -6,6 +6,8 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import React , { useEffect } from "react"
 import MapGoogle from '../../components/MapGoogle'
+import BtnCall from '../../components/BtnCall'
+import BtnMail from '../../components/BtnMail'
 
 
 function Home() {
@@ -28,8 +30,13 @@ function Home() {
 
         <div className='container-title-cel flex-col flex-align-c txt-center'>
 
-          <h1>Nettoyer, Vidanger, Déboucher, Débloquer. On s'occupe de tout !</h1>
-          <p>“Personne n'aime penser à l'entretien quotidien de ses tuyaux et canalisations, mais lorsqu'ils se bouchent, c'est un problème sérieux. Nous sommes l'entreprise sur laquelle vous pouvez compter pour être là pour vous 24h/24, 7j/7. Nous nous rendons à votre domicile ou à votre bureau et nettoyons vos canalisations et vos tuyaux.”</p>
+          <h1>Une Urgence ?</h1>
+          <h2>Assainissement, Débouchage de canalisation ? <span>CONTACTEZ-NOUS !</span></h2>
+          <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
+            <BtnCall />
+            <BtnMail />
+
+          </div>
 
         </div>
 
@@ -42,22 +49,14 @@ function Home() {
           <div className='section-cel flex-col'>
 
             <div>
-              <h2>Intervention en Urgence</h2>
+              <h2>Nettoyer, Vidanger, Déboucher, Débloquer. On s'occupe de tout !</h2>
             </div>
 
             <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
 
-              <div data-aos="fade-right" className='width-element-2 txt-center push-down'>
-                <img src={require('../../assets/contenu/degorgement.jpg')} alt='degorgement'/>
-              </div>
-
-              <div data-aos="fade-left" className='width-element-2'>
+              <div data-aos="fade-left" className=''>
                 
-                <p>
-                Le débouchage ou hydrocurage, consiste à vider, déboucher et désengorger les conduits obstrués empêchant la voie d’écoulement à l’aide d’un jet haute pression contrôlé.</p>
-                <p>Négliger un débouchage régulier, c’est faciliter l’accumulation des dépôts solides ou non-solides.</p>
-                <p>C'est là ou nous intervenons ! Notre intervention s’avère nécessaire pour nettoyer les canalisations bouchées.
-                </p>
+                <p>“Personne n'aime penser à l'entretien quotidien de ses tuyaux et canalisations, mais lorsqu'ils se bouchent, c'est un problème sérieux. Nous sommes l'entreprise sur laquelle vous pouvez compter pour être là pour vous 24h/24, 7j/7. Nous nous rendons à votre domicile ou à votre bureau et nettoyons vos canalisations et vos tuyaux.”</p>
 
               </div>
 
@@ -268,15 +267,41 @@ function Home() {
         </section>
 
         <section className='eighth-module flex-display-row flex-justify-c'>
+          <div className='section-cel'>
+            <div className='flex-display-row flex-justify-c responsive-col'>
 
-          <div className='flex-display-row flex-justify-c responsive-col'>
+              <div data-aos="fade-in-out" className='width-element-2 txt-center'>
+                  <div>
+                      <h2>Nos coordonées</h2>
+                  </div>
 
-            <div data-aos="fade-up" className='google-map-wrapper section-cel flex-col'>
-              <MapGoogle />
+                  <div>
+                      <h3>Nous sommes joignables toute la semaine et le dimanche 24h/24</h3>
+                  </div>
+
+                  <div className='tel-container'>
+                      <h4>Par Téléphone</h4>
+                      <a href="tel:+33 6 59 52 03 23">+33 6 59 52 03 23</a>
+                  </div>
+                      
+                  <div className='email-container'>
+                      <h4>Par Email</h4>
+                      <a href="mailto:dynamic-assainissement@gmail.com">dynamic-assainissement@gmail.com</a>
+                  </div>
+
+                  <div>
+                      <h4>Où nous trouver :</h4>
+                      <p className='txt-center'>22 Av. du Général Leclerc, 94470 Boissy-Saint-Léger</p>
+                  </div>
+                      
+              </div>
+
+              <div data-aos="fade-up" className='google-map-wrapper section-cel flex-col'>
+                <MapGoogle />
+              </div>
+
             </div>
-
           </div>
-
         </section>
 
       </div>

@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import '../../styles/Header.css'
+import BtnCall from '../BtnCall'
 
 
 function Header() {
@@ -23,9 +24,13 @@ function Header() {
         <div className='nav-links'>
 
           <NavLink exact to="/" activeClassName="style-nav-active" onClick={handleShowLinks}>Accueil</NavLink>
-          <NavLink to="/About" activeClassName="style-nav-active" onClick={handleShowLinks}>Notre Entreprise</NavLink>
+          <NavLink to="/About" activeClassName="style-nav-active" onClick={handleShowLinks}>Assainissement</NavLink>
           <NavLink to="/Contact"  activeClassName="style-nav-active" onClick={handleShowLinks}>Contact</NavLink>
 
+        </div>
+
+        <div className='responsive-btn'>
+          <BtnCall />
         </div>
 
         <button className='nav-burger' onClick={handleShowLinks}>

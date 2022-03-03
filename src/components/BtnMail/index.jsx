@@ -1,8 +1,8 @@
 import { Link, NavLink } from 'react-router-dom'
-import '../../styles/BtnCall.css'
-import { BsTelephoneForwardFill } from 'react-icons/bs'
+import '../../styles/BtnMail.css'
+import { AiOutlineMail } from 'react-icons/ai'
 
-function BtnCall() {
+function BtnMail() {
 
     const styleIcon = {
         color : "orange"
@@ -13,9 +13,10 @@ function BtnCall() {
         <div className='wrapper'>
 
             <div className='link_wrapper'>
-                <a href="tel:+33 6 59 52 03 23">Appellez nous</a>
+            
+                <NavLink to="/Contact">Contactez nous</NavLink>
                 <div className='icon'>
-                    <BsTelephoneForwardFill style={styleIcon}/>
+                    <AiOutlineMail style={styleIcon}/>
                 </div>
 
             </div>
@@ -24,4 +25,4 @@ function BtnCall() {
   )
 }
 
-export default BtnCall
+export default BtnMail

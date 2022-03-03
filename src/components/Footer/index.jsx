@@ -14,10 +14,10 @@ function Footer() {
 
         <div className='footer-link flex-col width-element-3'>
           <NavLink exact to="/" activeClassName="style-nav-active">Accueil</NavLink>
-          <NavLink to="/About" activeClassName="style-nav-active">Notre Entreprise</NavLink>
+          <NavLink to="/About" activeClassName="style-nav-active">Assainissement</NavLink>
           <NavLink to="/Contact" activeClassName="style-nav-active">Contactez-nous</NavLink>
-          <NavLink to="/Contact" activeClassName="style-nav-active">Mentions Légales</NavLink>
-          <NavLink to="/Contact" activeClassName="style-nav-active">Politique de confidentialité</NavLink>
+          <NavLink to="/Legal-mentions" activeClassName="style-nav-active">Mentions Légales</NavLink>
+          <NavLink to="/Confidential" activeClassName="style-nav-active">Politique de confidentialité</NavLink>
         </div>
 
         <div className='responsive-btn'>

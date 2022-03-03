@@ -16,6 +16,7 @@
     padding: .5em;
     position: relative;
     transition: all .35s;
+    border-radius: 33px;
 
 }
   
@@ -28,9 +29,9 @@
     text-decoration: none;
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: all .35s;
+    padding: 0 1em;
 }
   
 .icon
@@ -87,3 +88,4 @@
 {
     /* transform: rotate(-45deg); */
 }
+

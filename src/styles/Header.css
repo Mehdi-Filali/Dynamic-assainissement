@@ -25,7 +25,12 @@ nav
 
 .nav-logo
 {
-    width: auto;
+    width: 17%;
+}
+
+.nav-logo img
+{
+    width: 100%;
 }
 
 img
@@ -102,10 +107,17 @@ img
         
     }
 
+    .nav-container
+    {
+        display: block;
+        position: relative;
+    }
+
     .nav-logo
     {
-        text-align: center;
-        width: 90%;
+        width: 55%;
+        margin: 0 auto;
+         
     }
 
     .nav-links
@@ -143,10 +155,11 @@ img
 
     .nav-burger
     {
+        right: -1em;
+        top: 1.5em;
+        position: absolute;
         display: block;
-        top: 2em;
-        right: 2em;
-        padding: 0;
+
     }
     
     .nav-burger:hover

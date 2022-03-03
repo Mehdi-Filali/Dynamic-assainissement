@@ -3,6 +3,7 @@ h1
     padding-top: 5rem;
     padding-bottom: 5rem;
     font-family: 'Lobster', cursive;
+    color: orange;
 }
 
 .container-title
@@ -13,9 +14,23 @@ h1
     align-items: center;
     height: 70vh;
     color: #fff;
+}
+
+.contact-us
+{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url(../assets/contenu/banniere-contact.jpeg);
     background-position: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url('/src/assets/contenu/banner.jpg'); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 844px) 
+{
+    .contact-us p
+    {
+        width: 90%;
+        letter-spacing: 1px;
+    }
+}
+
 

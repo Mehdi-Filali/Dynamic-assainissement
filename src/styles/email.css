@@ -9,7 +9,7 @@ h2, p, h3, h4, a
     font-family: 'Comfortaa', sans-serif;
 }
 
-h2, h3, .tel-container
+h2, h3, .tel-container, .email-container
 {
     padding-bottom: 2rem;
 }
@@ -70,25 +70,22 @@ h2, h3, .tel-container
 
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+@media screen and (max-width: 844px) 
 {
-    /* Styles pour cette Media Queries */
-    section.contact.container > div > div.contact-img.col
+    .contact 
     {
-        display: none;
+        border: none;
+        border-radius: 0;
+        padding: 0 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        background: none;
     }
 
 }
 
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1199px) 
-{
-    /* Styles pour cette Media Queries */
-    section.contact.container > div > div.contact-img.col
-    {
-        display: none;
-    }
-}
+
 
 
