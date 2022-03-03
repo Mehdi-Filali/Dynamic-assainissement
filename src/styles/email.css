@@ -82,6 +82,11 @@ h2, h3, .tel-container, .email-container
         background: none;
     }
 
+    .contact .row
+    {
+        flex-direction: column;
+    }
+
 }
 
 
