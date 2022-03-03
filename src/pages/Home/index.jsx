@@ -18,6 +18,7 @@ function Home() {
     marginBottom: "1em"
   }
 
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, [])
@@ -32,10 +33,9 @@ function Home() {
 
           <h1>Une Urgence ?</h1>
           <h2>Assainissement, Débouchage de canalisation ? <span>CONTACTEZ-NOUS !</span></h2>
+          <p><span>Intervention Rapide 7j/7 et 24h/24</span></p>
           <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
             <BtnCall />
-            <BtnMail />
-
           </div>
 
         </div>
@@ -44,27 +44,7 @@ function Home() {
 
       <div className='container-section flex-col flex-align-c'>
 
-        <section className='first-module flex-display-row flex-justify-c'>
-
-          <div className='section-cel flex-col'>
-
-            <div>
-              <h2>Nettoyer, Vidanger, Déboucher, Débloquer. On s'occupe de tout !</h2>
-            </div>
-
-            <div className='flex-display-row flex-align-c flex-space-b responsive-col'>
-
-              <div data-aos="fade-left" className=''>
-                
-                <p>“Personne n'aime penser à l'entretien quotidien de ses tuyaux et canalisations, mais lorsqu'ils se bouchent, c'est un problème sérieux. Nous sommes l'entreprise sur laquelle vous pouvez compter pour être là pour vous 24h/24, 7j/7. Nous nous rendons à votre domicile ou à votre bureau et nettoyons vos canalisations et vos tuyaux.”</p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
+        
 
         <section className='second-module flex-display-row flex-justify-c'>
 

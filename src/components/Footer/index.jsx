@@ -12,12 +12,22 @@ function Footer() {
           <img src={require('../../assets/logo/logo-good.png')} alt='logo' />
         </div>
 
-        <div className='footer-link flex-col width-element-3'>
-          <NavLink exact to="/" activeClassName="style-nav-active">Accueil</NavLink>
-          <NavLink to="/About" activeClassName="style-nav-active">Assainissement</NavLink>
-          <NavLink to="/Contact" activeClassName="style-nav-active">Contactez-nous</NavLink>
-          <NavLink to="/Legal-mentions" activeClassName="style-nav-active">Mentions Légales</NavLink>
-          <NavLink to="/Confidential" activeClassName="style-nav-active">Politique de confidentialité</NavLink>
+        <div className='footer-link flex-display-row flex-space-b'>
+          <div className='flex-col width-element-2'>
+
+            <NavLink exact to="/" activeClassName="style-nav-active">Accueil</NavLink>
+            <NavLink to="/About" activeClassName="style-nav-active">Assainissement</NavLink>
+            <NavLink to="/Contact" activeClassName="style-nav-active">Contactez-nous</NavLink>
+
+          </div>
+
+          <div className='flex-col width-element-2'>
+
+            <NavLink to="/Legal-mentions" activeClassName="style-nav-active">Mentions Légales</NavLink>
+            <NavLink to="/Confidential" activeClassName="style-nav-active">Politique de confidentialité</NavLink>
+
+          </div>
+
         </div>
 
         <div className='responsive-btn'>

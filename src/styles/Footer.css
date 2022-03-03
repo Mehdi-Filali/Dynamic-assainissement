@@ -16,9 +16,13 @@ footer
 
 footer .width-element-2
 {
-    width: 40%;
+    width: 44%;
 }
 
+.footer-logo img
+{
+ width: 70%;
+}
 
 .footer-link a
 {
@@ -52,7 +56,7 @@ footer .width-element-2
         height: 62vw;
         justify-content: space-between;
         padding: 1em 0;
-        flex-direction: column;
+        flex-direction: column!important;
     }
 
     .footer-link
@@ -72,6 +76,11 @@ footer .width-element-2
     .responsive-btn
     {
         display: none;
+    }
+
+    .footer-logo img 
+    {
+        width: 47%;
     }
 
 }
