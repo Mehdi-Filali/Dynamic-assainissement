@@ -20,7 +20,7 @@ function Email() {
 
                 <div className="contact-info col">
                     <div>
-                        <h2>Nos coordonées</h2>
+                        <h2>Nos coordonnées</h2>
                     </div>
 
                     <div>

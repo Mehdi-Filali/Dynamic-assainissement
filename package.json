@@ -1,6 +1,7 @@
 {
-  "homepage": "https://Mehdi-Filali.github.io/Dynamic-assainissement",
-  "name": "site_assainissement",
+  "homepage": "http://dynamic-assainissement.fr/",
+  "name": "dynamic-assainissement",
+  "description": "mon site dynamic assainissement",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
