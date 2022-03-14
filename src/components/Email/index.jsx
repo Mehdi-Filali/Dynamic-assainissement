@@ -1,16 +1,67 @@
 // import { EmailJSResponseStatus } from "emailjs-com"
 import emailjs from 'emailjs-com'
+import { useState, useEffect } from "react";
 import '../../styles/Email.css'
 
 function Email() {
 
+    const initialValues = { name: "", email: "", message: "" };
+    const [formValues, setFormValues] = useState(initialValues);
+    const [formErrors, setFormErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
+    
     function sendEmail(e) {
         e.preventDefault();
+        setFormErrors(validate(formValues));
+        setIsSubmit(true);
         emailjs.sendForm('service_b27669s', 'template_gez5txd', e.target, 'user_2dO6JrA47B8iXyciikJ0n'
         ).then(res=>{
             console.log(res);
         }).catch(err=> console.log(err));
+        
     }
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value });
+    };
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     setFormErrors(validate(formValues));
+    //     setIsSubmit(true);
+    // };
+
+    useEffect(() => {
+        console.log(formErrors);
+        if (Object.keys(formErrors).length === 0 && isSubmit) {
+        console.log(formValues);
+        }
+    }, [formErrors, formValues, isSubmit]);
+    const validate = (values) => {
+        const errors = {};
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+        const regexName = /([A-Za-z]*)\w/;
+
+        if (!values.name) {
+            errors.name = "Veuillez rentrer un nom valide !";
+        } else if (!regexName.test(values.name)) {
+            errors.name = "Le nom n'est pas valide !";
+        }
+
+        if (!values.message) {
+            errors.message = "Veuillez rentrer un message valide !";
+        } 
+
+        if (!values.email) {
+            errors.email = "Veuillez rentrer une adresse mail valide !";
+        } else if (!regex.test(values.email)) {
+            errors.email = "L'adresse mail n'est pas au format valide !";
+        }
+
+        return errors;
+    };
+
     return (
 
 
@@ -44,40 +95,74 @@ function Email() {
                     <form onSubmit={sendEmail}>
 
                         {/* lastname/firmname */}
-                        {/* pattern="[A-Za-z]*" */}
                         <div class="form-floating mb-3">
-                            <input type="name" name="name" class="form-control" id="floatingInput" placeholder="Votre Nom/Entreprise" required />
+                            <input 
+                                type="name" 
+                                name="name" 
+                                class="form-control" 
+                                id="floatingInput" 
+                                placeholder="Votre Nom/Entreprise"
+                                value={formValues.name}
+                                onChange={handleChange}  
+                                required 
+                            />
                             <label for="floatingInput">Nom de famille/Entreprise</label>
 
-                            <div class="help is-error invalid-feedback">
-                                Veuillez rentrer un nom de famille valide !
-                            </div>
+                            <p>{formErrors.name}</p>
+                            
                         </div>
 
                         {/* email adress */}
                         <div class="form-floating mb-3">
-                            <input  className="form-control" id="floatingInput" type="email" name="email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" placeholder="email@.com" required />
+                            <input 
+                                className="form-control" 
+                                id="floatingInput" 
+                                type="email" 
+                                name="email" 
+                                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$" 
+                                placeholder="email@.com" 
+                                value={formValues.email}
+                                onChange={handleChange} 
+                                 
+                                
+                            />
                             <label for="floatingInput">email@.com</label>
 
-                            <div class="help is-error invalid-feedback">
-                                Veuillez rentrer une adresse mail valide !
-                            </div>
+                            <p>{formErrors.email}</p>
+                            
                         </div>
 
                         {/* message */}
                         <div class="form-floating">
-                            <textarea class="form-control" name="message" type="message" minlength="10" maxlength="250" placeholder="Laisser un commentaire ici" id="floatingTextarea2" style={{ height: "255px" }} required></textarea>
-                            <label for="floatingTextarea2">Ecrire votre commentaire</label>
+                            <textarea 
+                                class="form-control" 
+                                name="message" 
+                                type="message" 
+                                minLength="10" 
+                                maxLength="250" 
+                                placeholder="Laisser un commentaire ici" 
+                                id="floatingTextarea2"
+                                value={formValues.message}
+                                onChange={handleChange} 
+                                style={{ height: "255px" }} 
+                                required>
 
-                            <div class="help is-error invalid-feedback">
-                                Veuillez rentrer un message valide !
-                            </div>
+                            </textarea>
+                            <label for="floatingTextarea2">Ecrire votre commentaire</label>
+                            <p>{formErrors.message}</p>
+
                         </div>
 
                         {/* submit */}
                         <button type="submit" class="btn-link form-control btn btn-primary">
                             Envoyer
                         </button>
+
+                        { Object.keys(formErrors).length === 0 && isSubmit ? (
+                        <div className='valid-feedback'>Votre message a bien été envoyé !</div>
+                        ) : (
+                            console.log(<pre>{ JSON.stringify(formValues, undefined, 2) }</pre>)                  
+                        )}
 
                     </form>
 

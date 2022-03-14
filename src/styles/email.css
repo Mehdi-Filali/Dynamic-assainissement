@@ -14,11 +14,19 @@ h2, h3, .tel-container, .email-container
     padding-bottom: 2rem;
 }
 
-.invalid-feedback
+form
 {
-    display: none;
-    /* display: block; */
-    font-size: 0.775em;
+    position: relative;
+}
+
+.valid-feedback
+{
+    position: absolute;
+    display: block;
+    bottom: -45px;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1em;
 }
 
 /* form section */
