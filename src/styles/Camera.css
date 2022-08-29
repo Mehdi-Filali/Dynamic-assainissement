@@ -1,0 +1,23 @@
+.camera
+{
+    margin-bottom: 2em;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url(../assets/contenu/banniere-assainissement.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.youtube-contain>div
+{
+    width: 40em !important;
+    height: 25em !important;
+}
+
+@media screen and (max-width: 844px) {
+    .youtube-contain>div
+    {
+        width: 100% !important;
+        height: 14em !important;
+    }
+}

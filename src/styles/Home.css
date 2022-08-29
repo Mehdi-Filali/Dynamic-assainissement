@@ -86,7 +86,7 @@ section
 {
     margin-bottom: 2em;
     position: relative;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url(../assets/contenu/banner.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgb(95, 70, 49)), url(../assets/contenu/bannière-accueil.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -140,7 +140,8 @@ section
 .fourth-module h3
 {
     margin: 0;
-    padding-top: .5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .pomper, .curer, .déboucher
@@ -148,8 +149,6 @@ section
     width: 18em;
     height: 18em;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 50%;
 }
 
@@ -157,18 +156,24 @@ section
 {
     background: url(../assets/contenu/pompage.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .curer
 {
     background: url(../assets/contenu/curage.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .déboucher
 {
     background: url(../assets/contenu/debouche.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 

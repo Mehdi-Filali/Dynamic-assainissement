@@ -1,10 +1,52 @@
-.info
+.info, .prestations
 {
     width: 73%;
     text-align: justify;
     margin: 0 auto;
     padding-top: 3rem;
-    line-height: 3rem;
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+.débouchage h3, .vidange h3{
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+/****************** img section ******************/
+.change
+{
+    width: 100%;
+}
+
+.change h3
+{
+    padding-bottom: 0;
+    padding-top: 1rem;
+}
+
+.after, .before 
+{
+    width: 18em;
+    height: 18em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.before
+{
+    background: url(../assets/contenu/avant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.after
+{
+    background: url(../assets/contenu/après.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about
@@ -27,6 +69,11 @@
 
 @media screen and (max-width: 844px) 
 {
+    .responsive-col {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about p
     {
         width: 90%;
@@ -41,5 +88,15 @@
     .info p
     {
         letter-spacing: -1px;
+    }
+    .after, .before {
+        width: 12em;
+        height: 12em;
+    }
+    .before-contain{
+        padding-bottom: 2em;
+    }
+    .débouchage{
+        padding-bottom: 3em;
     }
 }
